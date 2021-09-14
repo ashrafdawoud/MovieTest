@@ -8,7 +8,21 @@
     tools:context=".Presentation.SplashScreen"
     >
     <ImageView
+        android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="center"/>
+        android:scaleType="center"
+        android:src="@drawable/mcu_background"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:layout_margin="50dp"
+            android:src="@drawable/logo"/>
+    </RelativeLayout>
 </RelativeLayout>
