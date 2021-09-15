@@ -4,18 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Presentation.CharactersScreen">
-
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    tools:context=".Presentation.HostMainActivity"
+    android:background="@color/black">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-        </LinearLayout>
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation_graph" />
 </RelativeLayout>

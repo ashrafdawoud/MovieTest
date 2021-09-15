@@ -47,6 +47,7 @@ dependencies {
 
 
     implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
     testImplementation 'junit:junit:4.+'
@@ -71,4 +72,9 @@ dependencies {
     def hilt_viewmodels = "1.0.0-alpha01"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_viewmodels"
     kapt "androidx.hilt:hilt-compiler:$hilt_viewmodels"
+
+    def nav_version = "2.3.5"
+
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
 }

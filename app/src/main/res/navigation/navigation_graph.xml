@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/charctersFragment">
+
+    <fragment
+        android:id="@+id/charctersFragment"
+        android:name="com.example.movieapplicationtest.Presentation.CharctersFragment"
+        android:label="fragment_charcters"
+        tools:layout="@layout/fragment_charcters" >
+        <action
+            android:id="@+id/action_charctersFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.movieapplicationtest.Presentation.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_charctersFragment"
+            app:destination="@id/charctersFragment" />
+    </fragment>
+</navigation>

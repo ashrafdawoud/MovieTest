@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieApplicationTest">
-        <activity android:name=".Presentation.CharactersScreen"></activity>
+        <activity android:name=".Presentation.HostMainActivity"></activity>
         <activity android:name=".Presentation.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

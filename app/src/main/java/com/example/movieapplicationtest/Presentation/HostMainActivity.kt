@@ -8,7 +8,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class CharactersScreen : AppCompatActivity() {
+class HostMainActivity : AppCompatActivity() {
     @Inject
     lateinit var activityDesign: ActivityDesign
     override fun onCreate(savedInstanceState: Bundle?) {
